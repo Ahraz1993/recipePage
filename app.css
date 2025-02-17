@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+}
+
+@font-face {
+    font-family: YoungSerif;
+    src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf');
+}
+@font-face {
+    font-family: OutfitRegular;
+    src: url("./assets/fonts/outfit/static/Outfit-ExtraLight.ttf");
+}
+@font-face {
+    font-family: OutfitBold;
+    src: url('./assets/fonts/outfit/static/Outfit-Bold.ttf');
+}
+@font-face {
+    font-family: OutfitMedium;
+    src: url('./assets/fonts/outfit/static/Outfit-Medium.ttf');
+}
+@font-face {
+    font-family: OutfitSemiBold;
+    src: url('./assets/fonts/outfit/static/Outfit-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: OutfitBlack;
+    src: url('./assets/fonts/outfit/static/Outfit-Black.ttf');
+}
+@font-face {
+    font-family: OutfitExtraBold;
+    src: url('./assets/fonts/outfit/static/Outfit-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: OutfitThin;
+    src: url('./assets/fonts/outfit/static/Outfit-Thin.ttf');
+}
+
+@font-face {
+    font-family: OutfitLight;
+    src: url('./assets/fonts/outfit/static/Outfit-Light.ttf');
+}
+@font-face {
+    font-family: OutfitExtraLight;
+    src: url('./assets/fonts/outfit/static/Outfit-ExtraLight.ttf');
+}
+:root{
+    --title:hsl(14, 45%, 36%);
+    --preparationtitle:hsl(332, 51%, 32%);
+    --preparationbg:hsl(330, 100%, 98%);
+    --titles:OutfitSemiBold;
+    --SectionTitle:YoungSerif;
+    --titleColor:hsl(30, 10%, 34%);
+    --descriptions:OutfitRegular;
+    --descriptionColor:hsl(24, 5%, 18%);
+}
+
+
+.main{
+    padding:5rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 54%, 90%);
+    min-width:100vw;
+    
+}
+.container{
+    min-height:20rem;
+    max-width:25rem;
+    min-width: 15rem;
+    /* min-width: 20rem; */
+    border-radius: 1rem;
+    background-color: hsl(0, 0%, 100%);
+}
+.content{
+    border-radius: 0.5rem;
+    padding: 1rem;
+    width:100%;
+    height:auto;
+    
+    
+    
+}
+img{
+    display:block;
+    max-width: 100%;
+    height:auto;
+    border-radius: inherit;
+}
+.heading{
+    font-family: YoungSerif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-top: 0.8rem;
+}
+.description{
+    font-size:0.5rem;
+    font-family: OutfitRegular;
+    margin-top:0.5rem;
+}
+.preparation{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 1rem;
+    background-color: var(--preparationbg);
+    width:100%;
+    height:auto;
+    border-radius: inherit;
+}
+.time{
+    
+    padding-left: 1rem;
+    padding-top: 1rem;
+    font-size: 0.8rem;
+    font-family: OutfitSemiBold;
+    color:var(--preparationtitle);
+}
+.list{
+    margin-left:1rem;
+}
+.list span{
+    padding-left: 0.5rem;
+}
+.instructions,.nutritionContent{
+    margin-left: 1rem;
+    font-size: 0.55rem;
+    padding:0.2rem;
+    font-family: var(--descriptions);
+    color:var(--descriptionColor);
+    
+}
+li::marker{
+    color:var(--title);
+} 
+.explanationTitles{
+    font-family: var(--titles);
+    color:var(--titleColor);
+    font-size: 0.6rem;
+}
+.thirdItem{
+    padding-bottom: 1rem;
+}
+
+
+.list li::marker{
+    /* margin-left:2rem ; */
+   
+    font-size: 0.5rem;
+    
+}
+.SectionTitle{
+    font-family: var(--SectionTitle);
+    padding-top: 1.1rem;
+    color:var(--title);
+    
+}
+
+.nutrition{
+    font-size: 0.55rem;
+    margin-top: 0.5rem;
+    padding:0.2rem;
+    font-family: var(--descriptions);
+    color:var(--descriptionColor);
+}
+table{
+    margin-left:2rem;
+    width:100%;
+}
+td{
+    width:50%;
+}
+.energy,.weight{
+    
+    font-family: var(--titles);
+    color:var(--title);
+    font-size: 0.5rem;
+}
