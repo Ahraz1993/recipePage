@@ -74,7 +74,7 @@
 .container{
     min-height:20rem;
     max-width:25rem;
-    min-width: 15rem;
+    min-width: 10rem;
     /* min-width: 20rem; */
     border-radius: 1rem;
     background-color: hsl(0, 0%, 100%);
@@ -171,15 +171,21 @@ li::marker{
     color:var(--descriptionColor);
 }
 table{
-    margin-left:2rem;
+   margin-left: 0.5rem;
     width:100%;
 }
-td{
-    width:50%;
+
+.nutritionContent{
+    width:46%;
 }
 .energy,.weight{
     
     font-family: var(--titles);
     color:var(--title);
     font-size: 0.5rem;
+}
+@media screen and (max-width:10rem) {
+    .nutritionContent{
+        width:40%;
+    }
 }
